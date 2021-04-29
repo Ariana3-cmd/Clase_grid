@@ -1,0 +1,58 @@
+.A{
+    display: grid;
+    background-color: blue;
+    width: 100%;
+    height: 100px;
+}
+.B{
+    display: grid;
+    background-color:indigo;
+    width: 100%;
+    height: 200px;
+}
+.C{
+    display: grid;
+    background-color:green;
+    width: 100%;
+    height: 100px;
+}
+#Sec2 {
+    display: grid;
+    width: 100%;
+    height: 450px;
+    grid-template-areas: "head head head"
+                         "nav  main div"
+                         "nav  foot foot";
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 150px 3fr 4fr;
+  }
+  
+  #Sec2 > header {
+    grid-area: head;
+    background-color: #8ca0ff;
+  }
+  
+  #Sec2 > nav {
+    grid-area: nav;
+    background-color: #ffa08c;
+  }
+  
+  #Sec2 > main {
+    grid-area: main;
+    background-color: #7e7e2b;
+  }
+  #Sec2 > div{
+      grid-area: div;
+      background-color: beige;
+  }
+  
+  #Sec2> footer {
+    grid-area: foot;
+    background-color: #8cffa0;
+  }
+.Pie{
+    display: grid;
+    background-color:red;
+    width: 100%;
+    height: 100px;
+}
